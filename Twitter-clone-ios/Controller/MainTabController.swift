@@ -12,16 +12,32 @@ class MainTabController: UITabBarController {
     
     // MARK: - Properties
     
+    // This is the format to create views programmatically
+    let actionButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.tintColor = .white
+        button.backgroundColor = .blue
+        button.setImage(UIImage(named: "new_tweet"), for: .normal)
+        return button
+    }()
+    
     // MARK: - Lifecycles
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureViewControllers()
+        configureUI()
 
     }
     
     // MARK: - Helper functions
+    
+    func configureUI() {
+        view.addSubview(actionButton)
+        actionButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingBottom: 64, paddingRight: 16, width: 56, height: 56)
+        actionButton.layer.cornerRadius = 56 / 2
+    }
     
     func configureViewControllers() {
         let feed = FeedController()
@@ -48,3 +64,23 @@ class MainTabController: UITabBarController {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+         // autoresizing without extension functions
+        // this line of code activates autoresizing
+//        actionButton.translatesAutoresizingMaskIntoConstraints = false
+//        actionButton.heightAnchor.constraint(equalToConstant: 56).isActive = true
+//        actionButton.widthAnchor.constraint(equalToConstant: 56).isActive = true
+//        actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -64).isActive = true
+//        actionButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
+//        actionButton.layer.cornerRadius = 56 / 2
