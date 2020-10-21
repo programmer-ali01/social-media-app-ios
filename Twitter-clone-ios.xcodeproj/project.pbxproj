@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		E4CF281B253F092100BADBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF281A253F092100BADBC4 /* AppDelegate.swift */; };
 		E4CF281D253F092100BADBC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF281C253F092100BADBC4 /* SceneDelegate.swift */; };
-		E4CF281F253F092100BADBC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF281E253F092100BADBC4 /* ViewController.swift */; };
 		E4CF2822253F092100BADBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CF2820253F092100BADBC4 /* Main.storyboard */; };
 		E4CF2824253F092300BADBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CF2823253F092300BADBC4 /* Assets.xcassets */; };
 		E4CF2827253F092300BADBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CF2825253F092300BADBC4 /* LaunchScreen.storyboard */; };
+		E4CF2836253F935000BADBC4 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF2835253F935000BADBC4 /* MainTabController.swift */; };
+		E4CF2838253F948C00BADBC4 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF2837253F948C00BADBC4 /* FeedController.swift */; };
+		E4CF283A253F950300BADBC4 /* ExplorerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF2839253F950300BADBC4 /* ExplorerController.swift */; };
+		E4CF283C253F953100BADBC4 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF283B253F953100BADBC4 /* NotificationsController.swift */; };
+		E4CF283E253F953D00BADBC4 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF283D253F953D00BADBC4 /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4CF2817253F092100BADBC4 /* Twitter-clone-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter-clone-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF281A253F092100BADBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4CF281C253F092100BADBC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4CF281E253F092100BADBC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4CF2821253F092100BADBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4CF2823253F092300BADBC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4CF2826253F092300BADBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4CF2828253F092300BADBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CF2835253F935000BADBC4 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		E4CF2837253F948C00BADBC4 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		E4CF2839253F950300BADBC4 /* ExplorerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerController.swift; sourceTree = "<group>"; };
+		E4CF283B253F953100BADBC4 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		E4CF283D253F953D00BADBC4 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		E4CF2819253F092100BADBC4 /* Twitter-clone-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E4CF2834253F923A00BADBC4 /* Model */,
+				E4CF2833253F923000BADBC4 /* View */,
+				E4CF2832253F922E00BADBC4 /* ViewModel */,
+				E4CF2831253F922A00BADBC4 /* Controller */,
+				E4CF282F253F921F00BADBC4 /* API */,
+				E4CF282E253F920C00BADBC4 /* Utils */,
 				E4CF281A253F092100BADBC4 /* AppDelegate.swift */,
 				E4CF281C253F092100BADBC4 /* SceneDelegate.swift */,
-				E4CF281E253F092100BADBC4 /* ViewController.swift */,
 				E4CF2820253F092100BADBC4 /* Main.storyboard */,
 				E4CF2823253F092300BADBC4 /* Assets.xcassets */,
 				E4CF2825253F092300BADBC4 /* LaunchScreen.storyboard */,
 				E4CF2828253F092300BADBC4 /* Info.plist */,
 			);
 			path = "Twitter-clone-ios";
+			sourceTree = "<group>";
+		};
+		E4CF282E253F920C00BADBC4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E4CF282F253F921F00BADBC4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E4CF2831253F922A00BADBC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF2835253F935000BADBC4 /* MainTabController.swift */,
+				E4CF2837253F948C00BADBC4 /* FeedController.swift */,
+				E4CF2839253F950300BADBC4 /* ExplorerController.swift */,
+				E4CF283B253F953100BADBC4 /* NotificationsController.swift */,
+				E4CF283D253F953D00BADBC4 /* ConversationsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4CF2832253F922E00BADBC4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E4CF2833253F923000BADBC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4CF2834253F923A00BADBC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4CF281F253F092100BADBC4 /* ViewController.swift in Sources */,
+				E4CF283C253F953100BADBC4 /* NotificationsController.swift in Sources */,
+				E4CF283E253F953D00BADBC4 /* ConversationsController.swift in Sources */,
 				E4CF281B253F092100BADBC4 /* AppDelegate.swift in Sources */,
 				E4CF281D253F092100BADBC4 /* SceneDelegate.swift in Sources */,
+				E4CF283A253F950300BADBC4 /* ExplorerController.swift in Sources */,
+				E4CF2836253F935000BADBC4 /* MainTabController.swift in Sources */,
+				E4CF2838253F948C00BADBC4 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
