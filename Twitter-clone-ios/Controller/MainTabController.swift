@@ -16,8 +16,9 @@ class MainTabController: UITabBarController {
     let actionButton: UIButton = {
         let button = UIButton(type: .system)
         button.tintColor = .white
-        button.backgroundColor = .blue
+        button.backgroundColor = .twitterBlue
         button.setImage(UIImage(named: "new_tweet"), for: .normal)
+        button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -29,6 +30,12 @@ class MainTabController: UITabBarController {
         configureViewControllers()
         configureUI()
 
+    }
+    
+    // MARK: - Selectors
+    
+    @objc func actionButtonTapped() {
+        print(123)
     }
     
     // MARK: - Helper functions
@@ -52,6 +59,7 @@ class MainTabController: UITabBarController {
         let conversations = ConversationsController()
         let nav4 = templateNavigationController(image: UIImage(named: "ic_mail_outline_white_2x-1")!, rootViewController: conversations)
         
+    
         viewControllers = [nav1, nav2, nav3, nav4]
     }
     

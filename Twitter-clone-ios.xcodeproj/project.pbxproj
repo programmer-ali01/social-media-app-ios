@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E44D468F2540692400921AD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D468E2540692400921AD6 /* Extensions.swift */; };
+		E44D46942540EED900921AD6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D46932540EED900921AD6 /* LoginController.swift */; };
+		E44D46962540EF5000921AD6 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D46952540EF5000921AD6 /* RegistrationController.swift */; };
 		E4CF281B253F092100BADBC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF281A253F092100BADBC4 /* AppDelegate.swift */; };
 		E4CF281D253F092100BADBC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CF281C253F092100BADBC4 /* SceneDelegate.swift */; };
 		E4CF2824253F092300BADBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CF2823253F092300BADBC4 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		E44D468E2540692400921AD6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E44D46932540EED900921AD6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E44D46952540EF5000921AD6 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		E4CF2817253F092100BADBC4 /* Twitter-clone-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter-clone-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF281A253F092100BADBC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4CF281C253F092100BADBC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E44D46922540EEB400921AD6 /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E44D46932540EED900921AD6 /* LoginController.swift */,
+				E44D46952540EF5000921AD6 /* RegistrationController.swift */,
+			);
+			path = authentication;
+			sourceTree = "<group>";
+		};
 		E4CF280E253F092100BADBC4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		E4CF2831253F922A00BADBC4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E44D46922540EEB400921AD6 /* authentication */,
 				E4CF2835253F935000BADBC4 /* MainTabController.swift */,
 				E4CF2837253F948C00BADBC4 /* FeedController.swift */,
 				E4CF2839253F950300BADBC4 /* ExplorerController.swift */,
@@ -201,9 +215,11 @@
 				E4CF283E253F953D00BADBC4 /* ConversationsController.swift in Sources */,
 				E4CF281B253F092100BADBC4 /* AppDelegate.swift in Sources */,
 				E44D468F2540692400921AD6 /* Extensions.swift in Sources */,
+				E44D46942540EED900921AD6 /* LoginController.swift in Sources */,
 				E4CF281D253F092100BADBC4 /* SceneDelegate.swift in Sources */,
 				E4CF283A253F950300BADBC4 /* ExplorerController.swift in Sources */,
 				E4CF2836253F935000BADBC4 /* MainTabController.swift in Sources */,
+				E44D46962540EF5000921AD6 /* RegistrationController.swift in Sources */,
 				E4CF2838253F948C00BADBC4 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
