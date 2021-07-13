@@ -41,7 +41,7 @@ class MainTabBarController: UITabBarController {
         
         view.backgroundColor = .systemBackground
         authenticateUserAndConfigureUI()
-        // logUserOut()
+        //logUserOut()
     }
     
     
@@ -52,6 +52,12 @@ class MainTabBarController: UITabBarController {
     
     @objc func handleActionButton() {
         print("DEBUG: actionButton pressed")
+        guard let user = user else { return }
+        let controller = UploadTweetController(user: user)
+        let nav = UINavigationController(rootViewController: controller)
+        // fullscreen
+      //  nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true, completion: nil)
     }
     
     // MARK: - Helper Functions
@@ -99,11 +105,11 @@ class MainTabBarController: UITabBarController {
     }
     
     func renderViewControllers() {
-        let feed = FeedViewController()
+        let feed = FeedViewController(collectionViewLayout: UICollectionViewFlowLayout())
         let feedIcon = UIImage(systemName: "house.fill")
         let nav1 = navigationTemplateController(image: feedIcon!, viewController: feed)
         
-        let notifications = NotificationsViewController()
+        let notifications = NotificationsController()
         let notificationIcon = UIImage(systemName: "exclamationmark.bubble.fill")
         let nav2 = navigationTemplateController(image: notificationIcon, viewController: notifications)
         

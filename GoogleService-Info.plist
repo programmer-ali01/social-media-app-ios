@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>604340265998-e5qn43qvv66d89mq89bvg6f1j87vfgmd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.604340265998-e5qn43qvv66d89mq89bvg6f1j87vfgmd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCti4q2YlN2_SCid3Lf2U6X2K4_PGAIhME</string>
+	<key>GCM_SENDER_ID</key>
+	<string>604340265998</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alisenamudaber.Twitter-clone-ios</string>
+	<key>PROJECT_ID</key>
+	<string>iostwitterclone</string>
+	<key>STORAGE_BUCKET</key>
+	<string>iostwitterclone.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:604340265998:ios:28c9a492b19fca16d5c85f</string>
+</dict>
+</plist>
