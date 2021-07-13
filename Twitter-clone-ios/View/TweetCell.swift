@@ -12,6 +12,7 @@ class TweetCell: UICollectionViewCell {
     
     // MARK: - Properties
     
+    // didset means that it will keep an eye on that function
     var tweet: Tweet? {
         didSet { configure() }
     }
