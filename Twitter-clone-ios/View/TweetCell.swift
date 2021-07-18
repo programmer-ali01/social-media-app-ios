@@ -93,7 +93,6 @@ class TweetCell: UICollectionViewCell {
         stack.anchor(top: profileImageView.topAnchor, left: profileImageView.rightAnchor, right: rightAnchor, paddingLeft: 12, paddingRight: 12)
         
         infoLabel.font = UIFont.systemFont(ofSize: 14)
-        infoLabel.text = "Eddie brock @venom"
         
         let actionStack = UIStackView(arrangedSubviews: [commentButton, retweetButton, likeButton, shareButton])
         actionStack.axis = .horizontal
@@ -136,7 +135,11 @@ class TweetCell: UICollectionViewCell {
     func configure() {
         guard let tweet = tweet else { return }
         
+        let viewModel = TweetViewModel(tweet: tweet)
         captionLabel.text = tweet.caption
+        
+        profileImageView.sd_setImage(with: viewModel.profileImageUrl)
+        infoLabel.attributedText = viewModel.userInfoText
         
     }
     
